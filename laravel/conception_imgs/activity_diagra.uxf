@@ -1,0 +1,34 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>350</x><y>400</y><w>190</w><h>120</h></coordinates><panel_attributes>User
+--
+id : int
+email: string
+password: string
+-
++athenticate(credentials): bool
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>70</y><w>190</w><h>120</h></coordinates><panel_attributes>User
+--
+string
+-
++athenticate(credentials): bool
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>10</y><w>210</w><h>120</h></coordinates><panel_attributes>Controller
+--
+use :AuthorizesRequests, 
+							DispatchesJobs, 
+							ValidatesRequests;
+-
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>190</y><w>190</w><h>130</h></coordinates><panel_attributes>Authentication
+--
+
+-
++login() :bool
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>190</y><w>190</w><h>120</h></coordinates><panel_attributes>AuthController
+--
+
+-
++login(Request $request):User
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>120</y><w>90</w><h>90</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;extendes&gt;&gt;</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>300</y><w>100</w><h>120</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=0..1
+teaches to &gt;</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>230</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element></diagram>
